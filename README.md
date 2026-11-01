@@ -1,8 +1,13 @@
 # Cynbit Website Quality Audit & QA Assessment Solution
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00b4d8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ashu-meena.github.io/cynbit-report/)
+[![QA CI](https://img.shields.io/badge/QA_Automation-Active_Suite-10b981?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Ashu-Meena/cynbit-report/actions)
+[![Health Score](https://img.shields.io/badge/Quality_Health_Score-74%2F100-f59e0b?style=for-the-badge)](https://ashu-meena.github.io/cynbit-report/)
+
 **Applicant / Lead:** ASHU MEENA  
 **Role Applied:** QA Testing Intern  
 **Target Platform:** [https://www.cynbit.in/](https://www.cynbit.in/)  
+**Live Interactive Dashboard:** [https://ashu-meena.github.io/cynbit-report/](https://ashu-meena.github.io/cynbit-report/)  
 **Assessment Task:** Cynbit Website Quality Audit  
 **Submission Portal:** [https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm](https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm)  
 **Submission Deadline:** Tue, Nov 3, 04:03 AM  
