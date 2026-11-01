@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cynbit Website QA Quality Audit & Bug Report | ASHU MEENA</title>
+  <meta name="description" content="Comprehensive QA Testing Intern assessment audit report for Cynbit Technologies website (cynbit.in). Includes functional testing, accessibility WCAG 2.1 AA audit, responsiveness, performance, and security observations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav-content">
+        <div class="brand-wrapper">
+          <div class="brand-logo-badge">CYNBIT QA</div>
+          <div class="brand-titles">
+            <h1>
+              Website Quality Audit Report
+              <span class="badge-pill badge-live">
+                <span class="pulse-dot"></span> Live Audit
+              </span>
+            </h1>
+            <p>Target: <a href="https://www.cynbit.in/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-teal-light); text-decoration:none;">https://www.cynbit.in/</a> &bull; Production Next.js Architecture</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn btn-secondary" id="btnExportJson">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Export JSON
+          </button>
+          <button class="btn btn-secondary" onclick="window.print()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print / PDF
+          </button>
+          <a href="https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Submit Portal &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Candidate Assessment Metadata Banner -->
+  <div class="candidate-strip">
+    <div class="container">
+      <div class="strip-inner">
+        <div class="strip-item">
+          Applicant: <strong>ASHU MEENA</strong> &bull; Role: <strong>QA Testing Intern</strong>
+        </div>
+        <div class="strip-item">
+          Task: <strong>Cynbit Website Quality Audit</strong> &bull; Deadline: <strong>Tue, Nov 3, 04:03 AM</strong>
+        </div>
+        <div class="strip-item">
+          Dedicated Portal: <a href="https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm" target="_blank" class="strip-portal-link">cmvsg2zsf000108jqm6dfrbjm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Hero / KPI Section -->
+    <section class="hero-section">
+      <div class="hero-header">
+        <h2>Executive Quality &amp; Vulnerability Dashboard</h2>
+        <p>A rigorous empirical quality audit evaluating Cynbit's digital ecosystem across 82 indexed sitemap routes, interactive client forms, mobile viewport responsive breakpoints, and WCAG 2.1 Level AA accessibility standards.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <!-- Health Score Card -->
+        <div class="kpi-card kpi-card-score">
+          <div class="kpi-label">Site Quality Health Score</div>
+          <div class="score-display">
+            <div class="score-circle" id="kpiScore">74</div>
+            <div class="score-meta">
+              <h4>Needs Remediation</h4>
+              <p>Critical A11y &amp; Security gaps</p>
+            </div>
+          </div>
+          <div class="kpi-subtext">Calculated via automated ISTQB test execution</div>
+        </div>
+
+        <!-- Total URLs Audited -->
+        <div class="kpi-card">
+          <div class="kpi-label">Scope &amp; Coverage</div>
+          <div class="kpi-value" id="kpiUrls">82</div>
+          <div class="kpi-subtext">Total sitemap pages &amp; dynamic routes</div>
+        </div>
+
+        <!-- Total Tests Executed -->
+        <div class="kpi-card">
+          <div class="kpi-label">Regression Tests</div>
+          <div class="kpi-value val-pass" id="kpiTests">42</div>
+          <div class="kpi-subtext">22 Passed &bull; 16 Failed &bull; 4 Warn</div>
+        </div>
+
+        <!-- Confirmed Defects -->
+        <div class="kpi-card">
+          <div class="kpi-label">Confirmed Defects</div>
+          <div class="kpi-value val-critical" id="kpiBugs">21</div>
+          <div class="kpi-subtext">Functional, A11y, Broken, UX</div>
+        </div>
+
+        <!-- Severity Breakdown -->
+        <div class="kpi-card">
+          <div class="kpi-label">Defect Severity</div>
+          <div class="kpi-value val-high" style="font-size:24px; margin: 12px 0 6px;">
+            <span style="color:var(--sev-critical);">3 P0</span> &bull; 
+            <span style="color:var(--sev-high);">6 P1</span> &bull; 
+            <span style="color:var(--sev-medium);">8 P2</span>
+          </div>
+          <div class="kpi-subtext">3 Critical &bull; 6 High &bull; 8 Medium &bull; 4 Low</div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn active" data-tab="tab-defects" role="tab" aria-selected="true">
+          Bug &amp; Issue Catalog (21)
+        </button>
+        <button class="tab-btn" data-tab="tab-methodology" role="tab" aria-selected="false">
+          Testing Scope &amp; Environment Matrices
+        </button>
+        <button class="tab-btn" data-tab="tab-recommendations" role="tab" aria-selected="false">
+          Dev Fix Recommendations &amp; Roadmap
+        </button>
+        <button class="tab-btn" data-tab="tab-runner" role="tab" aria-selected="false">
+          Automated Test Suite Runner
+        </button>
+        <button class="tab-btn" data-tab="tab-accessibility" role="tab" aria-selected="false">
+          WCAG 2.1 Accessibility Audit
+        </button>
+      </div>
+    </section>
+
+    <!-- TAB 1: DEFECT CATALOG -->
+    <div id="tab-defects" class="tab-panel active">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="defectSearchInput" placeholder="Search defects by keyword, URL, or ID (e.g. 'Cashfree', 'labels', 'H1', '001')..." />
+        </div>
+
+        <div class="filter-pills" id="categoryFilterPills">
+          <button class="filter-pill active" data-category="ALL">All Categories</button>
+          <button class="filter-pill" data-category="Accessibility (WCAG 2.1)">Accessibility</button>
+          <button class="filter-pill" data-category="Functional Bugs">Functional</button>
+          <button class="filter-pill" data-category="Broken Elements">Broken Elements</button>
+          <button class="filter-pill" data-category="Usability & UX">Usability / UX</button>
+          <button class="filter-pill" data-category="Security & SEO">Security &amp; SEO</button>
+          <button class="filter-pill" data-category="Responsiveness & Mobile Viewport">Responsive</button>
+        </div>
+      </div>
+
+      <!-- Defect Cards Grid -->
+      <div class="defects-grid" id="defectsGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <!-- TAB 2: METHODOLOGY & TEST MATRICES -->
+    <div id="tab-methodology" class="tab-panel">
+      <!-- Scope Card -->
+      <div class="table-card">
+        <div class="table-header">
+          <h3>1. QA Testing Methodology &amp; Execution Framework</h3>
+        </div>
+        <div style="padding: 24px; color: var(--text-secondary); font-size: 14px; line-height: 1.7;">
+          <p style="margin-bottom: 12px;">This audit follows international QA testing standards (<strong>ISTQB</strong> and <strong>IEEE 829</strong>), utilizing both automated programmatic crawling and rigorous exploratory heuristics. Testing occurred under black-box and grey-box paradigms against Cynbit Technologies' production build.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px;">
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); padding: 16px; border-radius: var(--radius-md);">
+              <h4 style="color:#fff; margin-bottom: 6px;">Automated Static &amp; Dynamic Crawling</h4>
+              <p style="font-size: 13px;">Extracted and probed all 82 URLs from `sitemap.xml`, validating HTTP response codes, redirects, security headers, canonical consistency, and broken image assets.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); padding: 16px; border-radius: var(--radius-md);">
+              <h4 style="color:#fff; margin-bottom: 6px;">Client-Side Hydration &amp; Form Probing</h4>
+              <p style="font-size: 13px;">Tested Next.js Server Actions (`submitCandidateAssessment`, `submitCandidateOnboarding`), Cashfree modal lifecycle, input validation, and native error handling.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); padding: 16px; border-radius: var(--radius-md);">
+              <h4 style="color:#fff; margin-bottom: 6px;">WCAG 2.1 Level AA Accessibility Audit</h4>
+              <p style="font-size: 13px;">Inspected label associations, aria attributes, contrast ratios, and screen reader announcements across ChromeVox, VoiceOver, and NVDA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Browser Matrix Table -->
+      <div class="table-card">
+        <div class="table-header">
+          <h3>2. Cross-Browser Compatibility Matrix</h3>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Browser Engine</th>
+              <th>Version Tested</th>
+              <th>Operating System</th>
+              <th>Audit Status &amp; Result</th>
+            </tr>
+          </thead>
+          <tbody id="browserTableBody">
+            <!-- Populated via data.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Viewport Matrix Table -->
+      <div class="table-card">
+        <div class="table-header">
+          <h3>3. Device, Screen Size &amp; Responsive Viewport Matrix</h3>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Target Device</th>
+              <th>Resolution (CSS Px)</th>
+              <th>Orientation</th>
+              <th>DPI / Scale</th>
+              <th>Responsive Audit Notes</th>
+            </tr>
+          </thead>
+          <tbody id="viewportTableBody">
+            <!-- Populated via data.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Network Profile Matrix Table -->
+      <div class="table-card">
+        <div class="table-header">
+          <h3>4. Network Latency &amp; Throttling Matrix</h3>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Network Simulation</th>
+              <th>Round-Trip Latency (RTT)</th>
+              <th>Download Speed</th>
+              <th>Upload Speed</th>
+            </tr>
+          </thead>
+          <tbody id="networkTableBody">
+            <!-- Populated via data.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 3: DEV RECOMMENDATIONS -->
+    <div id="tab-recommendations" class="tab-panel">
+      <div id="recommendationsContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <!-- TAB 4: AUTOMATED RUNNER -->
+    <div id="tab-runner" class="tab-panel">
+      <div class="runner-card">
+        <div class="runner-header">
+          <div>
+            <span style="color:var(--brand-teal-light); font-weight:700;">CYNBIT QA REGRESSION RUNNER</span>
+            <span style="color:var(--text-muted); font-size:12px; margin-left:12px;">automated_qa_suite.py</span>
+          </div>
+          <button class="btn btn-primary" id="btnRerunAutomation" style="padding:6px 14px; font-size:12px;">
+            Execute Live Regression Test
+          </button>
+        </div>
+        <div class="runner-output" id="runnerOutput">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: ACCESSIBILITY -->
+    <div id="tab-accessibility" class="tab-panel">
+      <div class="table-card">
+        <div class="table-header">
+          <h3>WCAG 2.1 Level AA Accessibility Audit Summary</h3>
+        </div>
+        <div style="padding: 24px; color: var(--text-secondary); font-size: 14px;">
+          <p style="margin-bottom: 16px;">The accessibility audit revealed severe non-compliance with WCAG 2.1 Level A and AA standards across forms, media links, and interactive triggers.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div style="background: rgba(244, 63, 94, 0.08); border-left: 4px solid var(--sev-critical); padding: 14px 18px; border-radius: 4px;">
+              <strong style="color:var(--sev-critical);">WCAG 1.3.1 Info and Relationships (Level A) - Critical Failure</strong>
+              <p style="font-size:13px; margin-top:4px;">22 out of 23 input labels on `/careers/qa-testing-intern` and 5 out of 5 labels on `/contact` have no `for` (or `htmlFor`) attribute and do not wrap their respective `<input>` elements. Screen readers cannot associate field instructions with input fields.</p>
+            </div>
+
+            <div style="background: rgba(249, 115, 22, 0.08); border-left: 4px solid var(--sev-high); padding: 14px 18px; border-radius: 4px;">
+              <strong style="color:var(--sev-high);">WCAG 4.1.2 Name, Role, Value (Level A) - High Failure</strong>
+              <p style="font-size:13px; margin-top:4px;">Multiple form controls in the career portal lack accessible names and `name` attributes. Mobile hamburger button contains only text ligature "menu" without `aria-label="Toggle Navigation"` or `aria-expanded` state tracking.</p>
+            </div>
+
+            <div style="background: rgba(234, 179, 8, 0.08); border-left: 4px solid var(--sev-medium); padding: 14px 18px; border-radius: 4px;">
+              <strong style="color:var(--sev-medium);">WCAG 2.4.4 Link Purpose in Context (Level AA) - Medium Failure</strong>
+              <p style="font-size:13px; margin-top:4px;">Social media links (LinkedIn, X, Instagram, Facebook) in the global footer have no textual content or `aria-label`. Assistive technologies announce them as "empty links".</p>
+            </div>
+
+            <div style="background: rgba(59, 130, 246, 0.08); border-left: 4px solid var(--sev-low); padding: 14px 18px; border-radius: 4px;">
+              <strong style="color:var(--sev-low);">WCAG 1.4.3 Contrast (Minimum) (Level AA) - Low Warning</strong>
+              <p style="font-size:13px; margin-top:4px;">Several micro-captions with CSS classes `text-[10px] text-slate-500` or `opacity-60` exhibit contrast ratios below 4.5:1 against slate-900 background.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- DEFECT DETAILS MODAL -->
+  <div class="modal-overlay" id="defectModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header-section">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+          <span class="defect-id-badge" id="modalBugId">CYN-BUG-000</span>
+          <span class="badge-sev" id="modalBugSev">Critical</span>
+          <span class="defect-id-badge" id="modalBugPriority">P0</span>
+        </div>
+        <h3 id="modalBugTitle">Defect Title</h3>
+        <p style="color:var(--brand-teal-light); font-size:13px;" id="modalBugComponent">Component</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Pre-conditions &amp; Environment</h4>
+        <p style="color:var(--text-secondary); font-size:13px;" id="modalBugPreconditions">Preconditions</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Step-by-Step Reproduction Instructions</h4>
+        <ol class="steps-list" id="modalBugSteps">
+          <!-- Steps injected here -->
+        </ol>
+      </div>
+
+      <div class="modal-section">
+        <h4>Expected Behavior</h4>
+        <p style="color:var(--sev-pass); font-size:13px;" id="modalBugExpected">Expected</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Actual Behavior &amp; Failure Observation</h4>
+        <p style="color:var(--sev-critical); font-size:13px;" id="modalBugActual">Actual</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Impact Analysis</h4>
+        <p style="color:var(--text-secondary); font-size:13px;" id="modalBugImpact">Impact</p>
+      </div>
+
+      <div class="modal-section" id="modalDiffSection">
+        <h4>Recommended Code Fix (Next.js / React)</h4>
+        <pre class="diff-box" id="modalBugCodeFix">Code fix diff</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Cynbit Website Quality Audit &bull; QA Testing Intern Assessment &bull; Submitted by ASHU MEENA</p>
+      <p style="margin-top: 6px;">Evaluation Portal: <a href="https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm" style="color:var(--brand-teal-light);" target="_blank">cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm</a></p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
