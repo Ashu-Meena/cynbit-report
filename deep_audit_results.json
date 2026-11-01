@@ -1,0 +1,500 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "url": "https://www.cynbit.in/",
+      "status_code": 200,
+      "response_time_ms": 603.5,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Architecting the future withAI automation."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/story",
+      "url": "https://www.cynbit.in/story",
+      "status_code": 200,
+      "response_time_ms": 403.4,
+      "title": "Our Story | The Vision Behind Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Cynbit: TheStory of a Vision"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 148,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/team",
+      "url": "https://www.cynbit.in/team",
+      "status_code": 200,
+      "response_time_ms": 488.7,
+      "title": "Core Team | The Digital Architects Behind Cynbit | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Meet theArchitectsbehind Cynbit"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 153,
+      "total_images": 10,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 3,
+      "empty_links_samples": [
+        "https://www.linkedin.com/in/mohak-saini/",
+        "https://www.linkedin.com/in/ashutosh-upadhyay1808/",
+        "https://www.linkedin.com/in/dhawannama/"
+      ]
+    },
+    {
+      "path": "/contact",
+      "url": "https://www.cynbit.in/contact",
+      "status_code": 200,
+      "response_time_ms": 365.9,
+      "title": "Contact Us | Cynbit Technologies - AI & Software Solutions | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Start Your NextProjectWith Us"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 158,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/careers",
+      "url": "https://www.cynbit.in/careers",
+      "status_code": 200,
+      "response_time_ms": 838.2,
+      "title": "Careers | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Explore theopportunitiesat Cynbit"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 110,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/careers/qa-testing-intern",
+      "url": "https://www.cynbit.in/careers/qa-testing-intern",
+      "status_code": 200,
+      "response_time_ms": 1660.3,
+      "title": "QA Testing Intern | Careers at Cynbit | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "QA Testing Intern"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 73,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/careers/full-stack-developer",
+      "url": "https://www.cynbit.in/careers/full-stack-developer",
+      "status_code": 200,
+      "response_time_ms": 1285.2,
+      "title": "Full Stack Developer | Careers at Cynbit | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Full Stack Developer"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 64,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/services",
+      "url": "https://www.cynbit.in/services",
+      "status_code": 200,
+      "response_time_ms": 744.4,
+      "title": "AI Automation & Software Development Services | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Built forScaleDesigned for Performance"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 151,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/products",
+      "url": "https://www.cynbit.in/products",
+      "status_code": 200,
+      "response_time_ms": 674.3,
+      "title": "Proprietary Software Suite | Cynbit Studio, TenantEase & Revio | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "TheCynbit ProductEcosystem"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 143,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/case-studies",
+      "url": "https://www.cynbit.in/case-studies",
+      "status_code": 200,
+      "response_time_ms": 1297.8,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur",
+      "h1_count": 1,
+      "h1_texts": [
+        "From Challenge toScalable Solutions"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 20,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/case-studies/urban-wardrobe-ar-integration",
+      "url": "https://www.cynbit.in/case-studies/urban-wardrobe-ar-integration",
+      "status_code": 200,
+      "response_time_ms": 1498.4,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur",
+      "h1_count": 1,
+      "h1_texts": [
+        "AR Virtual Try-On: Redefining the Fashion Experience."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 10,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/impact",
+      "url": "https://www.cynbit.in/impact",
+      "status_code": 200,
+      "response_time_ms": 795.9,
+      "title": "Social Impact | BitElevate & Manav Seva Trust Partnership | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Cynbit forSociety"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 156,
+      "total_images": 8,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/bitelevate",
+      "url": "https://www.cynbit.in/bitelevate",
+      "status_code": 200,
+      "response_time_ms": 904.6,
+      "title": "BitElevate: Remote Internships & Real-World Projects | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Stop Watching Tutorials.Start Doing the Work."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 254,
+      "total_images": 35,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/bitelevate/paths",
+      "url": "https://www.cynbit.in/bitelevate/paths",
+      "status_code": 200,
+      "response_time_ms": 739.5,
+      "title": "Design Your Own Career | Personalized Engineering Paths | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Architect yourown future."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 206,
+      "total_images": 10,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/diaries",
+      "url": "https://www.cynbit.in/diaries",
+      "status_code": 200,
+      "response_time_ms": 1199.1,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur",
+      "h1_count": 1,
+      "h1_texts": [
+        "Student Diaries:Unheared Stories"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/blog",
+      "url": "https://www.cynbit.in/blog",
+      "status_code": 200,
+      "response_time_ms": 1330.3,
+      "title": "Insights & Ideas | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Architectingknowledge."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 91,
+      "total_images": 13,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/blog/ai-agents-business-operations",
+      "url": "https://www.cynbit.in/blog/ai-agents-business-operations",
+      "status_code": 200,
+      "response_time_ms": 1502.9,
+      "title": "How AI Agents Are Transforming Business Operations in 2026 | Cynbit Insights | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "How AI Agents Are Transforming Business Operations in 2026"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 156,
+      "total_images": 8,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 10,
+      "empty_links_samples": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "path": "/privacy",
+      "url": "https://www.cynbit.in/privacy",
+      "status_code": 200,
+      "response_time_ms": 698.8,
+      "title": "Privacy Policy | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "PrivacyPolicy"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 109,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/terms",
+      "url": "https://www.cynbit.in/terms",
+      "status_code": 200,
+      "response_time_ms": 750.2,
+      "title": "Terms of Service | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "Terms ofService"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 98,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/cookies",
+      "url": "https://www.cynbit.in/cookies",
+      "status_code": 200,
+      "response_time_ms": 796.5,
+      "title": "Cookie Policy | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "CookiePolicy"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 85,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/candidate/cmvsg2zsf000108jqm6dfrbjm",
+      "url": "https://www.cynbit.in/candidate/cmvsg2zsf000108jqm6dfrbjm",
+      "status_code": 200,
+      "response_time_ms": 979.0,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur",
+      "h1_count": 0,
+      "h1_texts": [],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/navigation",
+      "url": "https://www.cynbit.in/navigation",
+      "status_code": 200,
+      "response_time_ms": 924.4,
+      "title": "Navigation Map | Cynbit Technologies | Cynbit Technologies",
+      "h1_count": 1,
+      "h1_texts": [
+        "DigitalNavigation Map"
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 98,
+      "total_images": 7,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    },
+    {
+      "path": "/non-existent-page-404",
+      "url": "https://www.cynbit.in/non-existent-page-404",
+      "status_code": 404,
+      "response_time_ms": 754.4,
+      "title": "Cynbit Technologies | AI Automation & Software Solutions Jaipur",
+      "h1_count": 1,
+      "h1_texts": [
+        "NodeNotFound."
+      ],
+      "has_meta_description": true,
+      "meta_description_len": 197,
+      "total_images": 0,
+      "missing_alt_count": 0,
+      "missing_alt_samples": [],
+      "empty_buttons_count": 0,
+      "empty_links_count": 0,
+      "empty_links_samples": []
+    }
+  ],
+  "api_endpoints": [
+    {
+      "endpoint": "/api/newsletter",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/subscribe",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/contact",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/lead",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/candidate/submit",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/candidate/cmvsg2zsf000108jqm6dfrbjm",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/health",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    },
+    {
+      "endpoint": "/api/version",
+      "get_status": 404,
+      "post_status": 404,
+      "post_resp": "<!DOCTYPE html><!--x_Rd73BtzTiCyyJyTHd5H--><html lang=\"en\" class=\"__variable_64a611 __variable_855f89 light scroll-smooth\"><head><meta charSet=\"utf-8\""
+    }
+  ],
+  "timestamp": "2026-11-01 20:30:53"
+}

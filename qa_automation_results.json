@@ -1,0 +1,166 @@
+{
+  "suite_name": "Cynbit Technologies QA Regression Suite",
+  "applicant": "ASHU MEENA",
+  "role": "QA Testing Intern",
+  "execution_time": "2026-11-01 20:36:17 UTC",
+  "total_tests": 14,
+  "passed": 0,
+  "failed": 13,
+  "warnings": 1,
+  "results": [
+    {
+      "test_id": "CYN-QA-001",
+      "category": "Broken Elements",
+      "name": "Default /favicon.ico returns HTTP 404",
+      "target_url": "https://www.cynbit.in/favicon.ico",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Server returned HTTP 404 with a full 15072 byte HTML error page for /favicon.ico.",
+      "reproduction": "1. Open browser network tab.\n2. Navigate to https://www.cynbit.in/favicon.ico or watch auto-load.\n3. Observe 404 error response.",
+      "recommendation": "Add a standard 32x32 /favicon.ico file to /public directory or configure next.config.js rewrite to /favicon.svg."
+    },
+    {
+      "test_id": "CYN-QA-002",
+      "category": "Security & SEO",
+      "name": "Temporary 307 Redirect on Apex Domain instead of 301",
+      "target_url": "https://cynbit.in",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "https://cynbit.in redirects with HTTP 307 (Temporary Redirect) to https://www.cynbit.in/ instead of 301 Permanent Redirect.",
+      "reproduction": "1. Send HEAD request to https://cynbit.in.\n2. Inspect response status code (307) and location header.",
+      "recommendation": "Change redirect rule in vercel.json or Next.js middleware to permanent 301 to preserve link equity and eliminate caching ambiguities."
+    },
+    {
+      "test_id": "CYN-QA-003",
+      "category": "Security & SEO",
+      "name": "Missing Critical Security Response Headers",
+      "target_url": "https://www.cynbit.in",
+      "severity": "High",
+      "status": "FAIL",
+      "details": "Missing security headers: Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy. Leaves site vulnerable to Clickjacking (missing X-Frame-Options) and MIME-type sniffing.",
+      "reproduction": "1. Inspect HTTP response headers for https://www.cynbit.in/.\n2. Confirm absence of CSP, X-Frame-Options, and X-Content-Type-Options.",
+      "recommendation": "Configure security headers in next.config.js under `async headers()` method."
+    },
+    {
+      "test_id": "CYN-QA-004",
+      "category": "Security & SEO",
+      "name": "Sitemap URLs Point to Redirecting Apex Domain",
+      "target_url": "https://www.cynbit.in/sitemap.xml",
+      "severity": "High",
+      "status": "FAIL",
+      "details": "All 82 sitemap entries use apex domain (https://cynbit.in), triggering 307 redirects for every crawler page hit.",
+      "reproduction": "1. Fetch https://www.cynbit.in/sitemap.xml.\n2. Check `<loc>` URLs - all start with https://cynbit.in which then redirects.",
+      "recommendation": "Update sitemap generator metadata `metadataBase` in layout.tsx to 'https://www.cynbit.in' so URLs match canonical destination."
+    },
+    {
+      "test_id": "CYN-QA-TYPO-DIARIES",
+      "category": "Broken Elements",
+      "name": "Typography & Heading Concatenation Defect on /diaries",
+      "target_url": "https://www.cynbit.in/diaries",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Spelling error in H1 'Unheared' instead of 'Unheard'. Observed text: 'Student Diaries:Unheared Stories'.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/diaries.\n2. Inspect primary H1 heading element.\n3. Observe text concatenation/typo.",
+      "recommendation": "Add explicit spaces in JSX elements or use whitespace-friendly template strings in React component."
+    },
+    {
+      "test_id": "CYN-QA-TYPO-BITELEVATEPATHS",
+      "category": "Broken Elements",
+      "name": "Typography & Heading Concatenation Defect on /bitelevate/paths",
+      "target_url": "https://www.cynbit.in/bitelevate/paths",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Missing whitespace between 'your' and 'own' ('Architect yourown future'). Observed text: 'Architect yourown future.'.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/bitelevate/paths.\n2. Inspect primary H1 heading element.\n3. Observe text concatenation/typo.",
+      "recommendation": "Add explicit spaces in JSX elements or use whitespace-friendly template strings in React component."
+    },
+    {
+      "test_id": "CYN-QA-TYPO-NAVIGATION",
+      "category": "Broken Elements",
+      "name": "Typography & Heading Concatenation Defect on /navigation",
+      "target_url": "https://www.cynbit.in/navigation",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Missing whitespace between 'Digital' and 'Navigation' in H1. Observed text: 'DigitalNavigation Map'.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/navigation.\n2. Inspect primary H1 heading element.\n3. Observe text concatenation/typo.",
+      "recommendation": "Add explicit spaces in JSX elements or use whitespace-friendly template strings in React component."
+    },
+    {
+      "test_id": "CYN-QA-TYPO-PRODUCTS",
+      "category": "Broken Elements",
+      "name": "Typography & Heading Concatenation Defect on /products",
+      "target_url": "https://www.cynbit.in/products",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Missing whitespace in H1 ('TheCynbit ProductEcosystem'). Observed text: 'TheCynbit ProductEcosystem'.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/products.\n2. Inspect primary H1 heading element.\n3. Observe text concatenation/typo.",
+      "recommendation": "Add explicit spaces in JSX elements or use whitespace-friendly template strings in React component."
+    },
+    {
+      "test_id": "CYN-QA-TYPO-TEAM",
+      "category": "Broken Elements",
+      "name": "Typography & Heading Concatenation Defect on /team",
+      "target_url": "https://www.cynbit.in/team",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Missing whitespace in H1 ('Meet theArchitectsbehind Cynbit'). Observed text: 'Meet theArchitectsbehind Cynbit'.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/team.\n2. Inspect primary H1 heading element.\n3. Observe text concatenation/typo.",
+      "recommendation": "Add explicit spaces in JSX elements or use whitespace-friendly template strings in React component."
+    },
+    {
+      "test_id": "CYN-QA-007",
+      "category": "Accessibility (WCAG 2.1)",
+      "name": "Career Application Form Unassociated Labels (22/23 disconnected)",
+      "target_url": "https://www.cynbit.in/careers/qa-testing-intern",
+      "severity": "Critical",
+      "status": "FAIL",
+      "details": "22 out of 23 form labels lack 'for' attributes and do not enclose input controls. Assistive technologies fail to announce field purposes.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/careers/qa-testing-intern.\n2. Inspect form controls inside #application-form.\n3. Click on any field label ('Full Name*', 'Email Address*'). Observe input does not receive focus.",
+      "recommendation": "Assign unique IDs to each input element and match them with <label htmlFor={id}> attributes."
+    },
+    {
+      "test_id": "CYN-QA-008",
+      "category": "Functional Bugs",
+      "name": "Missing 'name' Attributes on Career Form Controls (8 inputs)",
+      "target_url": "https://www.cynbit.in/careers/qa-testing-intern",
+      "severity": "High",
+      "status": "FAIL",
+      "details": "8 input/select elements (e.g. Qualification, Degree, Graduation Year) lack 'name' attributes. Native form submissions and autocomplete autofill fail to populate.",
+      "reproduction": "1. Inspect DOM on /careers/qa-testing-intern.\n2. Review select dropdowns and score inputs.\n3. Note missing name attribute.",
+      "recommendation": "Add explicit, descriptive 'name' attributes matching backend schema (e.g. name='graduationYear', name='degree')."
+    },
+    {
+      "test_id": "CYN-QA-009",
+      "category": "Accessibility (WCAG 2.1)",
+      "name": "Contact Page Form Completely Disconnected Labels (5/5 unassociated)",
+      "target_url": "https://www.cynbit.in/contact",
+      "severity": "High",
+      "status": "FAIL",
+      "details": "100% of labels on the Contact Form have no 'for' attributes and none of the input fields have 'id' attributes.",
+      "reproduction": "1. Navigate to https://www.cynbit.in/contact.\n2. Inspect input fields 'Full Name', 'Email Address', 'Your Message'.\n3. Click labels; observe input is not focused.",
+      "recommendation": "Add `id` to inputs and connect with `htmlFor` on labels."
+    },
+    {
+      "test_id": "CYN-QA-010",
+      "category": "Accessibility (WCAG 2.1)",
+      "name": "Social Media Icon Links Lack Accessible Names (4/4 links)",
+      "target_url": "https://www.cynbit.in",
+      "severity": "Medium",
+      "status": "FAIL",
+      "details": "Social anchor tags (LinkedIn, X, Facebook, Instagram) have no textual content and no aria-label. Screen readers announce 'empty link' or raw URL.",
+      "reproduction": "1. Inspect footer social icon links on homepage.\n2. Observe <a href='https://...'> without text or aria-label.",
+      "recommendation": "Add aria-label='Follow Cynbit on LinkedIn' (and corresponding platform names) to each anchor tag."
+    },
+    {
+      "test_id": "CYN-QA-011",
+      "category": "Usability & UX",
+      "name": "Header 'Join Us' Button Triggers Newsletter Instead of Careers",
+      "target_url": "https://www.cynbit.in",
+      "severity": "Medium",
+      "status": "WARNING",
+      "details": "Primary Call to Action 'Join Us' in top navigation bar opens a newsletter subscription popup rather than routing to /careers or hiring pipeline.",
+      "reproduction": "1. Visit Cynbit homepage.\n2. Click 'Join Us' in top right header.\n3. Observe newsletter modal appears instead of careers/hiring information.",
+      "recommendation": "Rename button to 'Subscribe' or redirect 'Join Us' directly to '/careers' or '/bitelevate' where users actually join the company/program."
+    }
+  ]
+}
